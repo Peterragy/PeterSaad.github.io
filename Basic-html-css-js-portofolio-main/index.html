@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Peter Saad</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Peter Saad</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/peterPP.png" alt="Peter's profile picture" class="profile-pic" />
+
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Peter Saad</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/peter-ragy-b593ab20a/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Peterragy'"
+          />
+          
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/peterSaad.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/badge_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p> <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/school_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                <!-- B.Tech Bachelors Degree<br/> -->
+                Bachelors Degree in Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hardworking and motivated Software Developer with hands-on experience in full-stack web development, mobile
+              applications, embedded systems, and machine learning. Skilled in modern programming languages and tools, with a
+              strong foundation in problem-solving, system design, and data-driven solutions. Experienced in developing intelligent
+              systems, including chatbot applications, and eager to apply technical expertise and creativity to real-world projects
+              while continuously learning and growing in the field of software engineering.
+              </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+    
+      <div class="experience-details-container">
+        <div class="about-containers">
+    
+          <!-- Frontend -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Flutter</h3><p>Experienced</p></div>
+              </article>
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>React</h3><p>Experienced</p></div>
+              </article>
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>HTML</h3><p>Experienced</p></div>
+              </article>
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>CSS</h3><p>Experienced</p></div>
+              </article>
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>JavaScript</h3><p>Intermediate</p></div>
+              </article>
+    
+            </div>
+          </div>
+    
+          <!-- Backend -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+    
+      
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Python</h3><p>Intermediate</p></div>
+              </article>
+
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Java</h3><p>Intermediate</p></div>
+              </article>
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>C</h3><p>Intermediate</p></div>
+              </article>
+    
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>SQL</h3><p>Intermediate</p></div>
+              </article>
+    
+            </div>
+          </div>
+    
+          <!-- Embedded -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Embedded Systems</h2>
+            <div class="article-container">
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>VHDL</h3><p>Intermediate</p></div>
+              </article>
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Arduino</h3><p>Intermediate</p></div>
+              </article>
+    
+            </div>
+          </div>
+    
+          <!-- Cybersecurity -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cybersecurity</h2>
+            <div class="article-container">
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Wireshark</h3><p>Intermediate</p></div>
+              </article>
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Metasploit</h3><p>Intermediate</p></div>
+              </article>
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Nmap</h3><p>Intermediate</p></div>
+              </article>
+    
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div><h3>Kali Linux Commands</h3><p>Intermediate</p></div>
+              </article>
+    
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+    
+      <div class="experience-details-container">
+        <div class="projects-slider-wrap">
+          <button class="slider-btn slider-btn-left" type="button" aria-label="Scroll left" onclick="scrollProjects(-1)">
+            ‹
+          </button>
+    
+          <div class="about-containers projects-slider" id="projectsSlider">
+    
+             <!-- ===================== Internship Project 6 ===================== -->
+  <div class="details-container color-container">
+    <div class="article-container">
+      <!-- TODO: Add project image -->
+      <img src="./assets/lakeView.png" alt="QR Access System" class="project-img" />
+    </div>
+
+    <h2 class="experience-sub-title project-title">LakeView residence</h2>
+
+    <p class="project-desc">
+      Developed a QR code ID badge system and guest pass generator to streamline access control for a residential compound.
+    </p>
+
+    <!-- <div class="btn-container">
+      <button class="btn btn-color-2 project-btn"
+        onclick="location.href='/* TODO: Add repo or company link */'">
+        Details
+      </button>
+    </div> -->
+  </div>
+
+  <!-- ===================== Internship Project 7 ===================== -->
+  <div class="details-container color-container">
+    <div class="article-container">
+      <!-- TODO: Add project image -->
+      <img src="./assets/edupayegyptcom_logo-2.jpeg" alt="EduPay installment system" class="project-img" />
+    </div>
+
+    <h2 class="experience-sub-title project-title">EduPay</h2>
+
+    <p class="project-desc">
+      Built a backend function to calculate payment installments and supported full stack development using Flutter.
+    </p>
+
+    <!-- <div class="btn-container">
+      <button class="btn btn-color-2 project-btn"
+        onclick="location.href='/* TODO: Add repo or company link */'">
+        Details
+      </button> -->
+    </div>
+            <!-- ===================== Project 1 ===================== -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <!-- TODO: Add project image -->
+                <img src="./assets/Wandermate_logo.svg" alt="Wander-Mate project" class="project-img" />
+              </div>
+    
+              <h2 class="experience-sub-title project-title">Wander-Mate</h2>
+    
+              <!-- Brief description -->
+              <p class="project-desc">
+                MERN travel platform for booking flights, hotels, tours, and souvenirs with custom itineraries and secure payments.
+              </p>
+            </br> 
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Advanced-computer-lab-2024/Wander-Mate'">
+                  GitHub
+                </button>
+                <!-- <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='/* TODO: Add Live Demo link */'">
+                  Live Demo
+                </button> -->
+              </div>
+            </div>
+    
+            <!-- ===================== Project 2 ===================== -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <!-- TODO: Add project image -->
+                <img src="./assets/airlineChatbot.png" alt="Intelligent Chatbot System" class="project-img" />
+              </div>
+    
+              <h2 class="experience-sub-title project-title">Airline Chatbot</h2>
+    
+              <!-- Brief description -->
+              <p class="project-desc">
+                Integrated knowledge graph queries with embedding retrieval, then used LLMs to merge results for better accuracy and context.
+              </p>
+    
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/mario3fady/ACL-Airline-94/'">
+                  GitHub
+                </button>
+                <!-- <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='/* TODO: Add Demo link (optional) */'">
+                  Demo
+                </button> -->
+              </div>
+            </div>
+    
+           
+            
+    
+    
+    
+          </div>
+    
+          <button class="slider-btn slider-btn-right" type="button" aria-label="Scroll right" onclick="scrollProjects(1)">
+            ›
+          </button>
+        </div>
+      </div>
+    
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    
+    
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="education">
+      <p class="section__text__p1">My Academic Journey</p>
+      <h1 class="title">Education</h1>
+    
+      <div class="experience-details-container">
+        <div class="about-containers">
+    
+          <!-- School -->
+          <div class="details-container color-container education-card">
+            <div class="edu-logo-wrap">
+              <!-- TODO: Add logo -->
+              <img src="./assets/nefertari.png" alt="Nefertari International School" class="edu-logo" />
+            </div>
+            <h2 class="experience-sub-title project-title">Nefertari International School</h2>
+          </div>
+    
+          <!-- University -->
+          <div class="details-container color-container education-card">
+            <div class="edu-logo-wrap">
+              <!-- TODO: Add logo -->
+              <img src="./assets/The_German_University_in_Cairo_Official_logo.jpg" alt="German University in Cairo" class="edu-logo" />
+            </div>
+            <h2 class="experience-sub-title project-title">German University in Cairo</h2>
+          </div>
+    
+          <!-- Thesis Research -->
+          <div class="details-container color-container education-card">
+            <div class="edu-logo-wrap">
+              <!-- TODO: Add logo -->
+              <img src="./assets/universitet-stuttgart.svg" alt="Universität Stuttgart" class="edu-logo" />
+            </div>
+          
+          
+            <h2 class="experience-sub-title project-title">Universität Stuttgart</h2>
+          </div>
+    
+        </div>
+      </div>
+    
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+    
+      <div class="contact-info-upper-container">
+    
+        <!-- Email -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:peterragy0902@gmail.com">
+              peterragy0902@gmail.com
+            </a>
+          </p>
+        </div>
+    
+        <!-- LinkedIn -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/peter-ragy-b593ab20a/" target="_blank">
+              LinkedIn
+            </a>
+          </p>
+        </div>
+
+        <!-- githib -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://github.com/Peterragy" target="_blank">
+              Github
+            </a>
+          </p>
+        </div>
+    
+        <!-- Phone -->
+        <!-- <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="tel:+201222791843">
+              +20 122279 1843
+            </a>
+          </p>
+        </div> -->
+    
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
