@@ -54,10 +54,14 @@
     padding-left: 1.5rem;
   }
 
-  /* edu grid collapses to single column */
+  /* edu grid collapses to single column, centered */
   .edu-grid {
     grid-template-columns: 1fr !important;
+    max-width: 480px !important;
+    margin: 0 auto !important;
   }
+  .education-card { text-align: center; align-items: center; }
+  #education .experience-details-container { align-items: center; }
 }
 
 /* ─── 900px ──────────────────────────────────────────── */
@@ -109,9 +113,21 @@
   }
   .slider-btn { display: none; }
 
-  /* education */
-  .edu-grid { grid-template-columns: 1fr !important; }
-  .education-card { min-width: 160px; }
+  /* education — single column, centered cards */
+  .edu-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 420px !important;
+    margin: 0 auto !important;
+  }
+  .education-card {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  #education .experience-details-container {
+    align-items: center;
+    width: 100%;
+  }
 
   /* contact */
   .contact-info-upper-container {
@@ -156,7 +172,8 @@
   .logo {
     font-size: 1.5rem;
   }
-  .nav-links {
+  /* only apply column direction to footer nav-links, not hamburger menu */
+  footer .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
