@@ -658,17 +658,12 @@ article p { font-size: 0.74rem; color: var(--clr-text-muted); margin: 0; }
 #education { position: relative; }
 
 .edu-grid {
-  display: grid !important;
+  display: grid;
   grid-template-columns: 1fr 1.35fr 1fr;
   gap: 1.1rem;
-  margin: 0 auto;          /* center the grid block */
-  max-width: 900px;        /* cap width so 3 cards don't spread too wide */
+  margin: 0 auto;
+  max-width: 900px;
   width: 100%;
-}
-
-/* center the wrapper that holds the grid */
-#education .experience-details-container {
-  align-items: center;
 }
 
 .education-card {

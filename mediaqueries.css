@@ -54,15 +54,7 @@
     padding-left: 1.5rem;
   }
 
-  /* edu grid collapses to single column, centered */
-  .edu-grid {
-    grid-template-columns: 1fr !important;
-    max-width: 480px !important;
-    margin: 0 auto !important;
-  }
-  .education-card { text-align: center; align-items: center; }
-  #education .experience-details-container { align-items: center; }
-}
+  
 
 /* ─── 900px ──────────────────────────────────────────── */
 @media screen and (max-width: 900px) {
@@ -113,22 +105,7 @@
   }
   .slider-btn { display: none; }
 
-  /* education — single column, centered cards */
-  .edu-grid {
-    grid-template-columns: 1fr !important;
-    max-width: 420px !important;
-    margin: 0 auto !important;
-  }
-  .education-card {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-  #education .experience-details-container {
-    align-items: center;
-    width: 100%;
-  }
-
+  
   /* contact */
   .contact-info-upper-container {
     flex-direction: column;
@@ -229,3 +206,55 @@
 .projects-slider .color-container {
   flex-shrink: 0 !important;
 }
+
+/* ─── Hamburger menu — consistent sizing at all breakpoints ── */
+.menu-links {
+  list-style: none;
+  padding-left: 0;
+}
+.menu-links li {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.menu-links li:last-child { border-bottom: none; }
+.menu-links a {
+  font-size: 1rem !important;   /* lock all items to same size */
+  font-weight: 600;
+  color: var(--clr-text);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: block;
+  padding: 0.1rem 0;
+  transition: color 0.26s ease, transform 0.26s ease;
+}
+.menu-links a:hover {
+  color: var(--clr-accent);
+  transform: translateX(4px);
+}
+
+/* ─── Education: mobile centering ──────────────────────── */
+@media screen and (max-width: 1200px) {
+  .edu-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 400px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .education-card {
+    text-align: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  #education {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  #education .experience-details-container {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .certs-row { text-align: center; width: 100%; }
+}}
