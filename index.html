@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peter Saad — Software Developer</title>
+    <title>Peter Saad — Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    
   </head>
   <body>
 
@@ -20,7 +19,8 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#work">Work</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -38,11 +38,12 @@
           <span></span>
         </div>
         <ul class="menu-links" id="menuLinks">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#about"      onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#work"       onclick="toggleMenu()">Work</a></li>
+          <li><a href="#projects"   onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#education"  onclick="toggleMenu()">Education</a></li>
+          <li><a href="#contact"    onclick="toggleMenu()">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -56,9 +57,9 @@
         <div class="status-badge reveal reveal-delay-1">Available for opportunities</div>
         <p class="section__text__p1 reveal reveal-delay-1">Hello, I'm</p>
         <h1 class="title reveal reveal-delay-2">Peter Saad</h1>
-        <p class="section__text__p2 reveal reveal-delay-3">Software Developer</p>
+        <p class="section__text__p2 reveal reveal-delay-3">Software Engineer</p>
         <div class="btn-container reveal reveal-delay-4">
-          <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">Download CV</button>
+          <button class="btn btn-color-2" onclick="window.open('./assets/Peter_Saad_CV.pdf')">Download CV</button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
         </div>
         <div id="socials-container" class="reveal reveal-delay-5">
@@ -83,21 +84,40 @@
             <div class="details-container reveal reveal-delay-2">
               <img src="./assets/badge_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="Experience icon" class="icon" />
               <h3>Experience</h3>
-              <p>Software Development</p>
+              <p>Full-Stack · Mobile · Embedded · Security</p>
             </div>
             <div class="details-container reveal reveal-delay-3">
               <img src="./assets/school_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="Education icon" class="icon" />
               <h3>Education</h3>
-              <p>Bachelors Degree in Computer Science</p>
+              <p>B.Sc. Computer Engineering — GUC</p>
             </div>
           </div>
+
+          <!-- Achievements strip -->
+          <div class="achievements-strip reveal reveal-delay-3">
+            <div class="ach-item">
+              <span class="ach-icon">🏆</span>
+              <span>CTF — Captured All Flags (RSA, 2026)</span>
+            </div>
+            <div class="ach-sep"></div>
+            <div class="ach-item">
+              <span class="ach-icon">🛡️</span>
+              <span>CEH Certified — MaharaTech (2025–26)</span>
+            </div>
+            <div class="ach-sep"></div>
+            <div class="ach-item">
+              <span class="ach-icon">☁️</span>
+              <span>Azure · Docker · CI/CD</span>
+            </div>
+          </div>
+
           <div class="text-container reveal reveal-delay-4">
             <p>
-              Hardworking and motivated Software Developer with hands-on experience in full-stack web development, mobile
-              applications, embedded systems, and machine learning. Skilled in modern programming languages and tools, with a
-              strong foundation in problem-solving, system design, and data-driven solutions. Experienced in developing intelligent
-              systems, including chatbot applications, and eager to apply technical expertise and creativity to real-world projects
-              while continuously learning and growing in the field of software engineering.
+              Results-driven Software Engineer with experience across full-stack web (MERN, Angular), mobile (Flutter),
+              embedded systems, and cybersecurity. Delivered QR access systems, AI chatbots, and booking platforms.
+              CTF competitor — captured all flags at an RSA-partnered university event. Certified ethical hacker
+              with penetration-testing experience. Passionate about continuous learning and quickly adapting to new
+              technologies, frameworks, and challenges.
             </p>
           </div>
         </div>
@@ -105,21 +125,22 @@
       <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
 
-    <!-- ── EXPERIENCE ── -->
+    <!-- ── SKILLS ── -->
     <section id="experience">
       <p class="section__text__p1 reveal">Explore My</p>
-      <h1 class="title reveal reveal-delay-1">Experience</h1>
+      <h1 class="title reveal reveal-delay-1">Technical Skills</h1>
       <div class="experience-details-container reveal reveal-delay-2">
         <div class="about-containers">
 
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend</h2>
             <div class="article-container">
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>React.js</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Angular</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
               <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Flutter</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>React</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>HTML</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>CSS</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>JavaScript</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Next.js</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>HTML / CSS</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>TypeScript</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
             </div>
           </div>
 
@@ -128,8 +149,34 @@
             <div class="article-container">
               <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Python</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
               <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Java</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>C</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Node.js</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Express.js</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
               <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>SQL</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>MongoDB</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cloud & DevOps</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Docker</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Azure</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>CI/CD</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Git / GitHub</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>REST APIs</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Postman</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cybersecurity</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Kali Linux</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Wireshark</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Metasploit</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Nmap</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Pen Testing</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>OSINT</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
             </div>
           </div>
 
@@ -138,20 +185,103 @@
             <div class="article-container">
               <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Arduino</h3><p><span class="skill-level experienced">Experienced</span></p></div></article>
               <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>VHDL</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
-            </div>
-          </div>
-
-          <div class="details-container">
-            <h2 class="experience-sub-title">Cybersecurity</h2>
-            <div class="article-container">
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Wireshark</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Metasploit</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Nmap</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Kali Linux</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
+              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>C</h3><p><span class="skill-level intermediate">Intermediate</span></p></div></article>
             </div>
           </div>
 
         </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#work'" />
+    </section>
+
+    <!-- ── WORK EXPERIENCE ── -->
+    <section id="work">
+      <p class="section__text__p1 reveal">My Professional</p>
+      <h1 class="title reveal reveal-delay-1">Work Experience</h1>
+
+      <div class="timeline reveal reveal-delay-2">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Full-Stack Developer Intern</h3>
+                <p class="timeline-company">IOCode — Cairo</p>
+              </div>
+              <span class="timeline-date">Jun 2026</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Architected and maintained a REST API (AdonisJS 5, TypeScript, Prisma/MongoDB) for vStore, a multi-tenant e-commerce SaaS platform, supporting JWT auth, tenant-scoped data isolation, and role-based permissions.</li>
+              <li>Built the full-stack client experience — a React 18 storefront, an Angular 13 admin dashboard, and a Flutter mobile app (iOS/Android) — each with tenant-specific branding, theming, and product/order flows.</li>
+              <li>Diagnosed and fixed critical cross-tenant data-isolation bugs to ensure tenant data privacy at scale, and managed CI/CD via GitHub Actions to a production Ubuntu server (nginx + PM2).</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>AdonisJS</span><span>TypeScript</span><span>Prisma</span><span>MongoDB</span><span>React 18</span><span>Angular 13</span><span>Flutter</span><span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Ethical Hacker Intern</h3>
+                <p class="timeline-company">Pathline Academy — Cairo</p>
+              </div>
+              <span class="timeline-date">Jan – Feb 2026</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Performed network traffic analysis with Wireshark, identifying 15+ vulnerability indicators across simulated enterprise environments.</li>
+              <li>Completed 20+ TryHackMe rooms covering privilege escalation, web exploitation, and network pivoting using Kali Linux.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Wireshark</span><span>Kali Linux</span><span>TryHackMe</span><span>Pen Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Mobile & Full-Stack Developer Intern</h3>
+                <p class="timeline-company">CodeMental — Cairo</p>
+              </div>
+              <span class="timeline-date">Jun – Aug 2024</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Designed and deployed a Flutter QR badge system for 200+ residents, cutting gate-access processing time by <strong>~70%</strong>.</li>
+              <li>Built a React.js frontend consuming REST APIs from a Node.js server, and an Angular-based admin panel for compound management.</li>
+              <li>Developed a QR guest-pass generator enabling secure one-time visitor access and eliminating paper-based entry logs.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Flutter</span><span>React.js</span><span>Angular</span><span>Node.js</span><span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Developer Intern</h3>
+                <p class="timeline-company">EduPay — Cairo</p>
+              </div>
+              <span class="timeline-date">Jun – Aug 2023</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Engineered an installment-calculation module in Flutter, reducing billing errors and cutting calculation time by <strong>~60%</strong>.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Flutter</span><span>Dart</span><span>Mobile Dev</span>
+            </div>
+          </div>
+        </div>
+
       </div>
       <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
@@ -165,48 +295,84 @@
         <div class="projects-slider-wrap">
           <button class="slider-btn slider-btn-left" type="button" aria-label="Scroll left" onclick="scrollProjects(-1)">‹</button>
 
-          <div class="about-containers projects-slider" id="projectsSlider">
+          <div class="projects-slider" id="projectsSlider">
 
             <div class="details-container color-container">
-              <div class="article-container">
-                <img src="./assets/lakeView.png" alt="QR Access System" class="project-img" />
+              <img src="./assets/vstore-icon.png" alt="Vstore" class="project-img project-img-placeholder" />
+              <div class="project-body">
+                <h2 class="project-title">Vstore — Multi-Tenant SaaS</h2>
+                <p class="project-desc">Multi-tenant e-commerce SaaS platform with JWT auth, tenant-scoped data isolation, role-based permissions, and full-stack client apps across web and mobile.</p>
               </div>
-              <h2 class="experience-sub-title project-title">LakeView Residence</h2>
-              <p class="project-desc">Developed a QR code ID badge system and guest pass generator to streamline access control for a residential compound.</p>
-            </div>
-
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img src="./assets/edupayegyptcom_logo-2.jpeg" alt="EduPay" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">EduPay</h2>
-              <p class="project-desc">Built a backend function to calculate payment installments and supported full stack development using Flutter.</p>
-            </div>
-
-            
-
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img src="./assets/airlineChatbot.png" alt="Airline Chatbot" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">Airline Chatbot</h2>
-              <p class="project-desc">Integrated knowledge graph queries with embedding retrieval, then used LLMs to merge results for better accuracy and context.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mario3fady/ACL-Airline-94/'">GitHub</button>
+              <div class="project-footer">
+                <div class="project-tech-tags">
+                  <span>AdonisJS</span><span>TypeScript</span><span>React 18</span><span>Angular 13</span><span>Flutter</span><span>MongoDB</span>
+                 
+                </div>
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://get.vstoreae.com'">Vstore</button>
+                </div>
               </div>
             </div>
 
             <div class="details-container color-container">
-              <div class="article-container">
-                <img src="./assets/Wandermate_logo.svg" alt="Wander-Mate" class="project-img" />
+              <img src="./assets/lakeView.png" alt="LakeView Residence" class="project-img" />
+              <div class="project-body">
+                <h2 class="project-title">LakeView Residence</h2>
+                <p class="project-desc">Flutter QR badge system and guest-pass generator for 200+ residents, cutting gate-access time by ~70% and eliminating paper entry logs.</p>
               </div>
-              <h2 class="experience-sub-title project-title">Wander-Mate</h2>
-              <p class="project-desc">MERN travel platform for booking flights, hotels, tours, and souvenirs with custom itineraries and secure payments.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Advanced-computer-lab-2024/Wander-Mate'">GitHub</button>
+              <div class="project-footer">
+                <div class="project-tech-tags">
+                  <span>Flutter</span><span>React.js</span><span>Angular</span><span>Node.js</span>
+                </div>
               </div>
             </div>
 
+            <div class="details-container color-container">
+              <img src="./assets/edupayegyptcom_logo-2.jpeg" alt="EduPay" class="project-img" />
+              <div class="project-body">
+                <h2 class="project-title">EduPay</h2>
+                <p class="project-desc">Installment-calculation module in Flutter reducing billing errors and cutting calculation time by ~60%. Full-stack support across mobile and admin interfaces.</p>
+              </div>
+              <div class="project-footer">
+                <div class="project-tech-tags">
+                  <span>Flutter</span><span>Dart</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <img src="./assets/airlineChatbot.png" alt="Airline Chatbot" class="project-img" />
+              <div class="project-body">
+                <h2 class="project-title">Airline Chatbot</h2>
+                <p class="project-desc">Hybrid chatbot merging Neo4j knowledge-graph queries with semantic embeddings + LLM outputs, improving response accuracy ~40% over baseline RAG.</p>
+              </div>
+              <div class="project-footer">
+                <div class="project-tech-tags">
+                  <span>Python</span><span>LangChain</span><span>Neo4j</span><span>OpenAI</span>
+                </div>
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mario3fady/ACL-Airline-94/'">GitHub</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-container color-container">
+              <img src="./assets/Wandermate_logo.svg" alt="Wander-Mate" class="project-img" />
+              <div class="project-body">
+                <h2 class="project-title">Wander-Mate</h2>
+                <p class="project-desc">Full-stack MERN booking platform for flights, hotels, tours and souvenirs — Stripe payments, itinerary builder, role-based authentication.</p>
+              </div>
+              <div class="project-footer">
+                <div class="project-tech-tags">
+                  <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span><span>Stripe</span>
+                </div>
+                <div class="btn-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Advanced-computer-lab-2024/Wander-Mate'">GitHub</button>
+                </div>
+              </div>
+            </div>
+
+           
           </div>
 
           <button class="slider-btn slider-btn-right" type="button" aria-label="Scroll right" onclick="scrollProjects(1)">›</button>
@@ -221,20 +387,23 @@
       <p class="section__text__p1 reveal">My Academic Journey</p>
       <h1 class="title reveal reveal-delay-1">Education</h1>
       <div class="experience-details-container reveal reveal-delay-2">
-        <div class="about-containers">
+        <div class="about-containers edu-grid">
 
           <div class="details-container color-container education-card">
             <div class="edu-logo-wrap">
               <img src="./assets/nefertari.png" alt="Nefertari International School" class="edu-logo" />
             </div>
             <h2 class="experience-sub-title project-title">Nefertari International School</h2>
+            <p class="edu-desc">Secondary education — IGCSE / A-Level</p>
           </div>
 
-          <div class="details-container color-container education-card">
+          <div class="details-container color-container education-card edu-card-main">
             <div class="edu-logo-wrap">
               <img src="./assets/The_German_University_in_Cairo_Official_logo.jpg" alt="German University in Cairo" class="edu-logo" />
             </div>
             <h2 class="experience-sub-title project-title">German University in Cairo</h2>
+            <p class="edu-desc">B.Sc. Computer Engineering · Sep 2021 – Present</p>
+            <p class="edu-courses">Machine Learning · Cybersecurity · HCI · Advanced Data Structures · Networks · Embedded Systems</p>
           </div>
 
           <div class="details-container color-container education-card">
@@ -242,8 +411,22 @@
               <img src="./assets/universitet-stuttgart.svg" alt="Universität Stuttgart" class="edu-logo" />
             </div>
             <h2 class="experience-sub-title project-title">Universität Stuttgart</h2>
+            <p class="edu-desc">Thesis Exchange · Mar – Aug 2025</p>
+            <p class="edu-courses">Research: Query concepts for asset administration shells</p>
           </div>
 
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="certs-row reveal reveal-delay-3">
+        <p class="section__text__p1">Certifications</p>
+        <div class="certs-list">
+          <div class="cert-chip">🏆 CTF All Flags — RSA Partnership (2026)</div>
+          <div class="cert-chip">🛡️ CEH — MaharaTech (2025–26)</div>
+          <div class="cert-chip">🔐 Ethical Hacking — Udemy (2025–26)</div>
+          <div class="cert-chip">🤖 Machine Learning — GUC (2025)</div>
+          <div class="cert-chip">📱 Flutter Dev — Udemy (2023)</div>
         </div>
       </div>
 
@@ -280,7 +463,8 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#work">Work</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -289,38 +473,6 @@
       </nav>
     </footer>
 
-    <script>
-      /* ── NAV SCROLL EFFECT ── */
-      const desktopNav = document.getElementById('desktop-nav');
-      window.addEventListener('scroll', () => {
-        desktopNav.classList.toggle('scrolled', window.scrollY > 20);
-      });
-
-      /* ── HAMBURGER ── */
-      function toggleMenu() {
-        const icon = document.getElementById('hamburgerIcon');
-        const links = document.getElementById('menuLinks');
-        icon.classList.toggle('open');
-        links.classList.toggle('open');
-      }
-
-      /* ── SCROLL REVEAL ── */
-      const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-      document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-      /* ── PROJECT SLIDER ── */
-      function scrollProjects(dir) {
-        const slider = document.getElementById('projectsSlider');
-        const cardWidth = slider.querySelector('.color-container')?.offsetWidth + 20 || 320;
-        slider.scrollBy({ left: dir * cardWidth, behavior: 'smooth' });
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
