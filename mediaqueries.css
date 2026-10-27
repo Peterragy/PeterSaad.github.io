@@ -54,13 +54,36 @@
     padding-left: 1.5rem;
   }
 
-  
+  /* education: one centred column */
+  .edu-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .education-card.color-container {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    text-align: center;
+    align-items: center;
+  }
+  #education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #education .experience-details-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .certs-row { text-align: center; width: 100%; }
+}
 
 /* ─── 900px ──────────────────────────────────────────── */
 @media screen and (max-width: 900px) {
-  #desktop-nav { display: none; }
-  #hamburger-nav { display: flex; }
-
   #profile {
     flex-direction: column;
     text-align: center;
@@ -93,19 +116,28 @@
   /* achievements strip stacks vertically */
   .achievements-strip {
     flex-direction: column;
+    align-items: stretch;
     gap: 0.5rem;
   }
+  .ach-item { justify-content: center; text-align: center; min-width: 0; }
   .ach-sep { width: 100%; height: 1px; margin: 0; }
 
-  /* project cards */
-  .color-container {
-    width: 260px;
-    min-width: 260px;
-    max-width: 260px;
-  }
+  /* projects: one full-width card per swipe, dots show position */
   .slider-btn { display: none; }
+  .projects-slider {
+    gap: 1rem;
+    padding: 0.5rem 0 1rem;
+    scroll-snap-type: x mandatory;
+  }
+  .projects-slider .color-container {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    scroll-snap-align: center;
+  }
+  .projects-slider .color-container:hover { transform: none; }
+  .project-img { height: 180px; }
 
-  
   /* contact */
   .contact-info-upper-container {
     flex-direction: column;
@@ -122,7 +154,7 @@
   #profile {
     height: auto;
     margin-bottom: 0;
-    padding: 72px 5% 50px;
+    padding: 84px 5% 50px;
   }
   article {
     font-size: 1rem;
@@ -130,7 +162,9 @@
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
+    justify-content: center;
   }
+  footer .nav-links-container { width: 100%; }
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
@@ -152,12 +186,14 @@
   /* only apply column direction to footer nav-links, not hamburger menu */
   footer .nav-links {
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
     text-align: center;
   }
+  /* let the photo set its own height so it never overlaps the text below */
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: auto;
     justify-content: center;
   }
   .section__text__p2 {
@@ -167,7 +203,7 @@
     font-size: 2rem;
   }
   .text-container {
-    text-align: justify;
+    text-align: left;
   }
 
   /* sections */
@@ -185,12 +221,11 @@
   .timeline-header { flex-direction: column; gap: 0.4rem; }
 
   /* project cards */
-  .color-container {
-    width: 240px;
-    min-width: 240px;
-    max-width: 240px;
-  }
   .project-desc { -webkit-line-clamp: 4; }
+
+  /* education cards: a little more compact */
+  .education-card { padding: 1.4rem 1.1rem; }
+  .education-card .project-title { font-size: 0.95rem; }
 
   /* certs wrap tighter */
   .certs-list { gap: 0.45rem; }
@@ -231,30 +266,3 @@
   color: var(--clr-accent);
   transform: translateX(4px);
 }
-
-/* ─── Education: mobile centering ──────────────────────── */
-@media screen and (max-width: 1200px) {
-  .edu-grid {
-    grid-template-columns: 1fr !important;
-    max-width: 400px !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-  }
-  .education-card {
-    text-align: center !important;
-    align-items: center !important;
-    width: 100% !important;
-  }
-  #education {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-  #education .experience-details-container {
-    width: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-  .certs-row { text-align: center; width: 100%; }
-}}

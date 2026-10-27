@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="style.css?v=3" />
+    <link rel="stylesheet" href="mediaqueries.css?v=3" />
   </head>
   <body>
 
@@ -51,7 +51,7 @@
     <!-- ── HERO ── -->
     <section id="profile">
       <div class="section__pic-container reveal">
-        <img src="./assets/peterPP.png" alt="Peter's profile picture" class="profile-pic" />
+        <img src="./assets/peterPP.jpg" alt="Peter's profile picture" class="profile-pic" />
       </div>
       <div class="section__text">
         <div class="status-badge reveal reveal-delay-1">Available for opportunities</div>
@@ -77,7 +77,7 @@
       <h1 class="title reveal reveal-delay-1">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container reveal reveal-delay-1">
-          <img src="./assets/peterSaad.png" alt="Profile picture" class="about-pic" />
+          <img src="./assets/peterSaad.jpg" alt="Profile picture" class="about-pic" />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
@@ -297,8 +297,19 @@
 
           <div class="projects-slider" id="projectsSlider">
 
-            <div class="details-container color-container">
+            <div class="details-container color-container project-card" tabindex="0" role="button">
               <img src="./assets/vstore-icon.png" alt="Vstore" class="project-img project-img-placeholder" />
+              <template class="project-details">
+                <p class="pd-meta">Full-Stack Developer · IOCode · 2026</p>
+                <p class="pd-summary">A white-label e-commerce platform where every store owner gets their own branded storefront, admin dashboard and mobile app, all running on one shared backend.</p>
+                <ul class="pd-points">
+                  <li>REST API in AdonisJS 5 + TypeScript with Prisma/MongoDB, JWT auth and role-based permissions</li>
+                  <li>Tenant-scoped data isolation: found and fixed cross-tenant leaks in orders, uploads, search and user accounts</li>
+                  <li>React 18 storefront, Angular 13 admin dashboard and Flutter iOS/Android app, each themed per tenant</li>
+                  <li>Per-tenant force-update flow for the mobile apps and cache invalidation so branding changes go live instantly</li>
+                  <li>CI/CD with GitHub Actions to a production Ubuntu server behind nginx + PM2</li>
+                </ul>
+              </template>
               <div class="project-body">
                 <h2 class="project-title">Vstore — Multi-Tenant SaaS</h2>
                 <p class="project-desc">Multi-tenant e-commerce SaaS platform with JWT auth, tenant-scoped data isolation, role-based permissions, and full-stack client apps across web and mobile.</p>
@@ -314,8 +325,20 @@
               </div>
             </div>
 
-            <div class="details-container color-container">
+            <div class="details-container color-container project-card" tabindex="0" role="button">
               <img src="./assets/dealernet-logo.png" alt="DealerNet" class="project-img project-img-placeholder" />
+              <template class="project-details">
+                <p class="pd-meta">Product build · 2026</p>
+                <p class="pd-summary">A private B2B network for car dealerships. When a customer wants a car that isn't on the lot, sales staff search partner dealerships' shared inventory, send a request, and the owning dealer accepts or rejects it in real time.</p>
+                <ul class="pd-points">
+                  <li>Multi-tenant accounts with Admin, Sales and Inventory roles, enforced on the server</li>
+                  <li>Network search across make, model, year, price, mileage, distance and more, with cost and stock numbers kept private</li>
+                  <li>Request workflow that reserves the car atomically and auto-rejects competing requests</li>
+                  <li>Real-time notifications over Socket.io with a polling fallback</li>
+                  <li>Subscriptions, trials, referral rewards and a platform console for billing and suspensions</li>
+                  <li>Full Arabic and English UI with right-to-left layout, built for the Egyptian market</li>
+                </ul>
+              </template>
               <div class="project-body">
                 <h2 class="project-title">DealerNet — Dealer Network SaaS</h2>
                 <p class="project-desc">Private B2B network for car dealerships: search partners' shared inventory, request vehicles, and accept or reject in real time. Roles, CSV import, subscriptions, and full Arabic/English RTL support.</p>
@@ -330,8 +353,19 @@
               </div>
             </div>
 
-            <div class="details-container color-container">
+            <div class="details-container color-container project-card" tabindex="0" role="button">
               <img src="./assets/johnfrance-logo.svg" alt="John France" class="project-img project-img-placeholder" />
+              <template class="project-details">
+                <p class="pd-meta">Website build · 2026</p>
+                <p class="pd-summary">A scroll-driven 3D marketing site for John France Professional, a hair and body care brand, with every bottle, jar and tube generated in code instead of loaded as model files.</p>
+                <ul class="pd-points">
+                  <li>Procedural 3D packaging in Three.js with printed JF labels drawn on canvas</li>
+                  <li>Logo intro animation and pinned collection stories where the page colour shifts per product line</li>
+                  <li>Draggable 3D carousel of the range, smooth scrolling with GSAP + Lenis</li>
+                  <li>199-product catalogue across 7 categories with shade variants and a store locator</li>
+                  <li>Respects reduced-motion settings and ships as a static Vite build</li>
+                </ul>
+              </template>
               <div class="project-body">
                 <h2 class="project-title">John France — 3D Product Site</h2>
                 <p class="project-desc">Scroll-driven 3D marketing site for a professional hair and body care brand: code-generated product packaging, pinned collection stories, a draggable 3D carousel, and a 199-product catalogue with store locator.</p>
@@ -346,8 +380,17 @@
               </div>
             </div>
 
-            <div class="details-container color-container">
+            <div class="details-container color-container project-card" tabindex="0" role="button">
               <img src="./assets/lakeView.png" alt="LakeView Residence" class="project-img" />
+              <template class="project-details">
+                <p class="pd-meta">Mobile & Full-Stack Developer · CodeMental · 2024</p>
+                <p class="pd-summary">A gate-access system for a residential compound that replaced paper visitor logs with QR codes.</p>
+                <ul class="pd-points">
+                  <li>Flutter QR badge app for 200+ residents, cutting gate-access time by ~70%</li>
+                  <li>One-time QR guest passes for secure visitor entry</li>
+                  <li>React.js frontend on a Node.js REST API, plus an Angular admin panel for compound management</li>
+                </ul>
+              </template>
               <div class="project-body">
                 <h2 class="project-title">LakeView Residence</h2>
                 <p class="project-desc">Flutter QR badge system and guest-pass generator for 200+ residents, cutting gate-access time by ~70% and eliminating paper entry logs.</p>
@@ -359,8 +402,17 @@
               </div>
             </div>
 
-            <div class="details-container color-container">
+            <div class="details-container color-container project-card" tabindex="0" role="button">
               <img src="./assets/edupayegyptcom_logo-2.jpeg" alt="EduPay" class="project-img" />
+              <template class="project-details">
+                <p class="pd-meta">Software Developer · EduPay · 2023</p>
+                <p class="pd-summary">A school-fees payment app; I built the module that splits tuition into instalment plans.</p>
+                <ul class="pd-points">
+                  <li>Instalment-calculation module in Flutter</li>
+                  <li>Cut calculation time by ~60% and reduced billing errors</li>
+                  <li>Supported both the mobile app and the admin interfaces</li>
+                </ul>
+              </template>
               <div class="project-body">
                 <h2 class="project-title">EduPay</h2>
                 <p class="project-desc">Installment-calculation module in Flutter reducing billing errors and cutting calculation time by ~60%. Full-stack support across mobile and admin interfaces.</p>
@@ -372,8 +424,17 @@
               </div>
             </div>
 
-            <div class="details-container color-container">
+            <div class="details-container color-container project-card" tabindex="0" role="button">
               <img src="./assets/airlineChatbot.png" alt="Airline Chatbot" class="project-img" />
+              <template class="project-details">
+                <p class="pd-meta">University project · GUC</p>
+                <p class="pd-summary">A question-answering chatbot for airline data that combines a knowledge graph with semantic search.</p>
+                <ul class="pd-points">
+                  <li>Neo4j knowledge-graph queries merged with embedding-based retrieval</li>
+                  <li>LLM answers grounded in both sources through LangChain</li>
+                  <li>~40% more accurate answers than a baseline RAG pipeline</li>
+                </ul>
+              </template>
               <div class="project-body">
                 <h2 class="project-title">Airline Chatbot</h2>
                 <p class="project-desc">Hybrid chatbot merging Neo4j knowledge-graph queries with semantic embeddings + LLM outputs, improving response accuracy ~40% over baseline RAG.</p>
@@ -388,8 +449,17 @@
               </div>
             </div>
 
-            <div class="details-container color-container">
+            <div class="details-container color-container project-card" tabindex="0" role="button">
               <img src="./assets/Wandermate_logo.svg" alt="Wander-Mate" class="project-img" />
+              <template class="project-details">
+                <p class="pd-meta">University project · GUC · 2024</p>
+                <p class="pd-summary">A full-stack travel booking platform for flights, hotels, tours and souvenirs.</p>
+                <ul class="pd-points">
+                  <li>MERN stack with role-based authentication for tourists, guides, sellers and admins</li>
+                  <li>Stripe payments and an itinerary builder</li>
+                  <li>Booking flows for flights, hotels and activities in one place</li>
+                </ul>
+              </template>
               <div class="project-body">
                 <h2 class="project-title">Wander-Mate</h2>
                 <p class="project-desc">Full-stack MERN booking platform for flights, hotels, tours and souvenirs — Stripe payments, itinerary builder, role-based authentication.</p>
@@ -409,6 +479,7 @@
 
           <button class="slider-btn slider-btn-right" type="button" aria-label="Scroll right" onclick="scrollProjects(1)">›</button>
         </div>
+        <div class="slider-dots" id="sliderDots" aria-hidden="true"></div>
       </div>
 
       <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#education'" />
@@ -505,6 +576,21 @@
       </nav>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- ── PROJECT DETAILS MODAL ── -->
+    <div class="pd-overlay" id="projectModal" hidden>
+      <div class="pd-backdrop" data-close></div>
+      <div class="pd-panel" role="dialog" aria-modal="true" aria-labelledby="pdTitle">
+        <button class="pd-close" type="button" aria-label="Close details" data-close>&times;</button>
+        <div class="pd-hero"><img id="pdImg" alt="" /></div>
+        <div class="pd-content">
+          <h2 class="pd-title" id="pdTitle"></h2>
+          <div id="pdBody"></div>
+          <div class="project-tech-tags pd-tags" id="pdTags"></div>
+          <div class="pd-actions" id="pdActions"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js?v=3"></script>
   </body>
 </html>
